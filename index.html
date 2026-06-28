@@ -1,4 +1,11 @@
 <!DOCTYPE html>
+<script type="application/json" id="cowork-artifact-meta">
+{
+  "name": "Wc 2026 Pool",
+  "schemaVersion": 1,
+  "description": "World Cup 2026 betting pool: 8 managers, 4 teams each drafted from the 32 knockout qualifiers (tiered by FIFA ranking). Shows the full knockout bracket with dates/times/venues, each manager's roster with live alive/eliminated status, and a leaderboard. Match results are entered daily by the scheduled update task."
+}
+</script>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -130,7 +137,7 @@ const TEAMS = {
 // To record a result, set s1, s2 (numbers) and w (winning team name). pens optional string e.g. "(4-3 pens)".
 const MATCHES = [
   // ---- Round of 32 ----
-  {id:"r32-1",  round:"R32", date:"Sun Jun 28", time:"3:00 PM ET",  venue:"SoFi Stadium, Inglewood", a:"South Africa", b:"Canada"},
+  {id:"r32-1",  round:"R32", date:"Sun Jun 28", time:"3:00 PM ET",  venue:"SoFi Stadium, Inglewood", a:"South Africa", b:"Canada", s1:0, s2:1, w:"Canada"},
   {id:"r32-2",  round:"R32", date:"Mon Jun 29", time:"1:00 PM ET",  venue:"NRG Stadium, Houston", a:"Brazil", b:"Japan"},
   {id:"r32-3",  round:"R32", date:"Mon Jun 29", time:"4:30 PM ET",  venue:"Gillette Stadium, Foxborough", a:"Germany", b:"Paraguay"},
   {id:"r32-4",  round:"R32", date:"Mon Jun 29", time:"9:00 PM ET",  venue:"Estadio BBVA, Monterrey", a:"Netherlands", b:"Morocco"},
@@ -167,7 +174,7 @@ const MATCHES = [
   {id:"third", round:"3rd", date:"Sat Jul 18", time:"5:00 PM ET", venue:"Hard Rock Stadium, Miami", a:{l:"sf-1"}, b:{l:"sf-2"}},
   {id:"final", round:"Final", date:"Sun Jul 19", time:"3:00 PM ET", venue:"MetLife Stadium, East Rutherford", a:{w:"sf-1"}, b:{w:"sf-2"}}
 ];
-const LAST_UPDATED = "Last checked Jun 28, 2026. No knockout results are final yet; scores update daily.";
+const LAST_UPDATED = "Updated Jun 28, 2026";
 
 /* ====== LOGIC ====== */
 const byId = Object.fromEntries(MATCHES.map(m=>[m.id,m]));
