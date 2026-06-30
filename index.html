@@ -234,15 +234,30 @@ function renderLegend(){
   });
 }
 
+// Order each round top-to-bottom by the bracket tree (DFS from the final),
+// so every match lines up to the right of the two games that feed it.
+function buildBracketOrder(){
+  const order={R32:[],R16:[],QF:[],SF:[],Final:[]};
+  const seen={};
+  function visit(id){
+    const m=byId[id]; if(!m||seen[id]) return; seen[id]=1;
+    if(order[m.round]) order[m.round].push(m);
+    [m.a,m.b].forEach(s=>{ if(s&&s.w) visit(s.w); });
+  }
+  visit("final");
+  return order;
+}
+
 function renderBracket(){
   const st=computeStatus();
   const root=document.getElementById("bracket"); root.innerHTML="";
+  const order=buildBracketOrder();
   const cols=[["R32","Round of 32"],["R16","Round of 16"],["QF","Quarterfinals"],["SF","Semifinals"],["Final","Final"]];
   cols.forEach(([code,label])=>{
     const col=el("div","col");
     col.appendChild(el("div","coltitle",label));
     const mc=el("div","matches");
-    let list=MATCHES.filter(m=>m.round===code);
+    let list=order[code]||[];
     if(code==="Final"){ // show third place under final
       list=[byId["final"], byId["third"]];
     }
