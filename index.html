@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<script type="application/json" id="cowork-artifact-meta">
+<!DOCTYPE html><script type="application/json" id="cowork-artifact-meta">
 {
   "name": "Wc 2026 Pool",
   "schemaVersion": 1,
@@ -141,9 +140,9 @@ const MATCHES = [
   {id:"r32-2",  round:"R32", date:"Mon Jun 29", time:"1:00 PM ET",  venue:"NRG Stadium, Houston", a:"Brazil", b:"Japan", s1:2, s2:1, w:"Brazil"},
   {id:"r32-3",  round:"R32", date:"Mon Jun 29", time:"4:30 PM ET",  venue:"Gillette Stadium, Foxborough", a:"Germany", b:"Paraguay", s1:1, s2:1, w:"Paraguay", pens:"(4-3 pens)"},
   {id:"r32-4",  round:"R32", date:"Mon Jun 29", time:"9:00 PM ET",  venue:"Estadio BBVA, Monterrey", a:"Netherlands", b:"Morocco", s1:1, s2:1, w:"Morocco", pens:"(3-2 pens)"},
-  {id:"r32-5",  round:"R32", date:"Tue Jun 30", time:"1:00 PM ET",  venue:"AT&T Stadium, Arlington", a:"Ivory Coast", b:"Norway"},
-  {id:"r32-6",  round:"R32", date:"Tue Jun 30", time:"5:00 PM ET",  venue:"MetLife Stadium, East Rutherford", a:"France", b:"Sweden"},
-  {id:"r32-7",  round:"R32", date:"Tue Jun 30", time:"9:00 PM ET",  venue:"Estadio Azteca, Mexico City", a:"Mexico", b:"Ecuador"},
+  {id:"r32-5",  round:"R32", date:"Tue Jun 30", time:"1:00 PM ET",  venue:"AT&T Stadium, Arlington", a:"Ivory Coast", b:"Norway", s1:1, s2:2, w:"Norway"},
+  {id:"r32-6",  round:"R32", date:"Tue Jun 30", time:"5:00 PM ET",  venue:"MetLife Stadium, East Rutherford", a:"France", b:"Sweden", s1:3, s2:0, w:"France"},
+  {id:"r32-7",  round:"R32", date:"Tue Jun 30", time:"9:00 PM ET",  venue:"Estadio Azteca, Mexico City", a:"Mexico", b:"Ecuador", s1:2, s2:0, w:"Mexico"},
   {id:"r32-8",  round:"R32", date:"Wed Jul 1",  time:"12:00 PM ET", venue:"Mercedes-Benz Stadium, Atlanta", a:"England", b:"Congo DR"},
   {id:"r32-9",  round:"R32", date:"Wed Jul 1",  time:"TBD",         venue:"Lumen Field, Seattle", a:"Belgium", b:"Senegal"},
   {id:"r32-10", round:"R32", date:"Wed Jul 1",  time:"8:00 PM ET",  venue:"Levi's Stadium, Santa Clara", a:"USA", b:"Bosnia and Herzegovina"},
@@ -174,7 +173,7 @@ const MATCHES = [
   {id:"third", round:"3rd", date:"Sat Jul 18", time:"5:00 PM ET", venue:"Hard Rock Stadium, Miami", a:{l:"sf-1"}, b:{l:"sf-2"}},
   {id:"final", round:"Final", date:"Sun Jul 19", time:"3:00 PM ET", venue:"MetLife Stadium, East Rutherford", a:{w:"sf-1"}, b:{w:"sf-2"}}
 ];
-const LAST_UPDATED = "Updated Jun 30, 2026. Brazil 2-1 Japan; Paraguay 1-1 Germany (4-3 pens); Morocco 1-1 Netherlands (3-2 pens).";
+const LAST_UPDATED = "Updated Jul 1, 2026. Norway 2-1 Ivory Coast; France 3-0 Sweden; Mexico 2-0 Ecuador.";
 
 /* ====== LOGIC ====== */
 const byId = Object.fromEntries(MATCHES.map(m=>[m.id,m]));
