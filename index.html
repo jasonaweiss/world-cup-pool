@@ -149,9 +149,9 @@ const MATCHES = [
   {id:"r32-11", round:"R32", date:"Thu Jul 2",  time:"3:00 PM ET",  venue:"SoFi Stadium, Inglewood", a:"Spain", b:"Austria", s1:3, s2:0, w:"Spain"},
   {id:"r32-12", round:"R32", date:"Thu Jul 2",  time:"7:00 PM ET",  venue:"BMO Field, Toronto", a:"Portugal", b:"Croatia", s1:2, s2:1, w:"Portugal"},
   {id:"r32-13", round:"R32", date:"Thu Jul 2",  time:"11:00 PM ET", venue:"BC Place, Vancouver", a:"Switzerland", b:"Algeria", s1:2, s2:0, w:"Switzerland"},
-  {id:"r32-14", round:"R32", date:"Fri Jul 3",  time:"2:00 PM ET",  venue:"AT&T Stadium, Arlington", a:"Australia", b:"Egypt"},
-  {id:"r32-15", round:"R32", date:"Fri Jul 3",  time:"6:00 PM ET",  venue:"Hard Rock Stadium, Miami", a:"Argentina", b:"Cape Verde"},
-  {id:"r32-16", round:"R32", date:"Fri Jul 3",  time:"9:30 PM ET",  venue:"Arrowhead Stadium, Kansas City", a:"Colombia", b:"Ghana"},
+  {id:"r32-14", round:"R32", date:"Fri Jul 3",  time:"2:00 PM ET",  venue:"AT&T Stadium, Arlington", a:"Australia", b:"Egypt", s1:1, s2:1, w:"Egypt", pens:"(4-2 pens)"},
+  {id:"r32-15", round:"R32", date:"Fri Jul 3",  time:"6:00 PM ET",  venue:"Hard Rock Stadium, Miami", a:"Argentina", b:"Cape Verde", s1:3, s2:2, w:"Argentina"},
+  {id:"r32-16", round:"R32", date:"Fri Jul 3",  time:"9:30 PM ET",  venue:"Arrowhead Stadium, Kansas City", a:"Colombia", b:"Ghana", s1:1, s2:0, w:"Colombia"},
   // ---- Round of 16 ----
   {id:"r16-1", round:"R16", date:"Sat Jul 4", time:"1:00 PM ET", venue:"NRG Stadium, Houston", a:{w:"r32-1"}, b:{w:"r32-4"}},
   {id:"r16-2", round:"R16", date:"Sat Jul 4", time:"5:00 PM ET", venue:"Lincoln Financial Field, Philadelphia", a:{w:"r32-3"}, b:{w:"r32-6"}},
@@ -173,7 +173,7 @@ const MATCHES = [
   {id:"third", round:"3rd", date:"Sat Jul 18", time:"5:00 PM ET", venue:"Hard Rock Stadium, Miami", a:{l:"sf-1"}, b:{l:"sf-2"}},
   {id:"final", round:"Final", date:"Sun Jul 19", time:"3:00 PM ET", venue:"MetLife Stadium, East Rutherford", a:{w:"sf-1"}, b:{w:"sf-2"}}
 ];
-const LAST_UPDATED = "Updated Jul 3, 2026. Spain 3-0 Austria; Portugal 2-1 Croatia; Switzerland 2-0 Algeria.";
+const LAST_UPDATED = "Updated Jul 3, 2026. Egypt 1-1 Australia (4-2 pens); Argentina 3-2 Cape Verde; Colombia 1-0 Ghana. Round of 32 complete.";
 
 /* ====== LOGIC ====== */
 const byId = Object.fromEntries(MATCHES.map(m=>[m.id,m]));
