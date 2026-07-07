@@ -157,8 +157,8 @@ const MATCHES = [
   {id:"r16-2", round:"R16", date:"Sat Jul 4", time:"5:00 PM ET", venue:"Lincoln Financial Field, Philadelphia", a:{w:"r32-3"}, b:{w:"r32-6"}, s1:0, s2:1, w:"France"},
   {id:"r16-3", round:"R16", date:"Sun Jul 5", time:"4:00 PM ET", venue:"MetLife Stadium, East Rutherford", a:{w:"r32-2"}, b:{w:"r32-5"}, s1:0, s2:2, w:"Norway"},
   {id:"r16-4", round:"R16", date:"Sun Jul 5", time:"8:00 PM ET", venue:"Estadio Azteca, Mexico City", a:{w:"r32-7"}, b:{w:"r32-8"}, s1:2, s2:3, w:"England"},
-  {id:"r16-5", round:"R16", date:"Mon Jul 6", time:"3:00 PM ET", venue:"AT&T Stadium, Arlington", a:{w:"r32-12"}, b:{w:"r32-11"}},
-  {id:"r16-6", round:"R16", date:"Mon Jul 6", time:"8:00 PM ET", venue:"Lumen Field, Seattle", a:{w:"r32-10"}, b:{w:"r32-9"}},
+  {id:"r16-5", round:"R16", date:"Mon Jul 6", time:"3:00 PM ET", venue:"AT&T Stadium, Arlington", a:{w:"r32-12"}, b:{w:"r32-11"}, s1:0, s2:1, w:"Spain"},
+  {id:"r16-6", round:"R16", date:"Mon Jul 6", time:"8:00 PM ET", venue:"Lumen Field, Seattle", a:{w:"r32-10"}, b:{w:"r32-9"}, s1:1, s2:4, w:"Belgium"},
   {id:"r16-7", round:"R16", date:"Tue Jul 7", time:"12:00 PM ET", venue:"Mercedes-Benz Stadium, Atlanta", a:{w:"r32-15"}, b:{w:"r32-14"}},
   {id:"r16-8", round:"R16", date:"Tue Jul 7", time:"4:00 PM ET", venue:"BC Place, Vancouver", a:{w:"r32-13"}, b:{w:"r32-16"}},
   // ---- Quarterfinals ----
@@ -173,7 +173,7 @@ const MATCHES = [
   {id:"third", round:"3rd", date:"Sat Jul 18", time:"5:00 PM ET", venue:"Hard Rock Stadium, Miami", a:{l:"sf-1"}, b:{l:"sf-2"}},
   {id:"final", round:"Final", date:"Sun Jul 19", time:"3:00 PM ET", venue:"MetLife Stadium, East Rutherford", a:{w:"sf-1"}, b:{w:"sf-2"}}
 ];
-const LAST_UPDATED = "Updated Jul 5, 2026. Norway 2-0 Brazil (upset); England 3-2 Mexico. Round of 16 continues.";
+const LAST_UPDATED = "Updated Jul 6, 2026. Spain 1-0 Portugal (Merino 90+1'); Belgium 4-1 USA. Round of 16 continues.";
 
 /* ====== LOGIC ====== */
 const byId = Object.fromEntries(MATCHES.map(m=>[m.id,m]));
