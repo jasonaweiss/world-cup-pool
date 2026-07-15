@@ -167,13 +167,13 @@ const MATCHES = [
   {id:"qf-3", round:"QF", date:"Sat Jul 11", time:"5:00 PM ET", venue:"Hard Rock Stadium, Miami", a:{w:"r16-3"}, b:{w:"r16-4"}, s1:1, s2:2, w:"England", pens:"(AET)" },
   {id:"qf-4", round:"QF", date:"Sat Jul 11", time:"9:00 PM ET", venue:"Arrowhead Stadium, Kansas City", a:{w:"r16-7"}, b:{w:"r16-8"}, s1:3, s2:1, w:"Argentina", pens:"(AET)" },
   // ---- Semifinals ----
-  {id:"sf-1", round:"SF", date:"Tue Jul 14", time:"3:00 PM ET", venue:"AT&T Stadium, Arlington", a:{w:"qf-1"}, b:{w:"qf-2"}},
+  {id:"sf-1", round:"SF", date:"Tue Jul 14", time:"3:00 PM ET", venue:"AT&T Stadium, Arlington", a:{w:"qf-1"}, b:{w:"qf-2"}, s1:0, s2:2, w:"Spain" },
   {id:"sf-2", round:"SF", date:"Wed Jul 15", time:"3:00 PM ET", venue:"Mercedes-Benz Stadium, Atlanta", a:{w:"qf-3"}, b:{w:"qf-4"}},
   // ---- Third place + Final ----
   {id:"third", round:"3rd", date:"Sat Jul 18", time:"5:00 PM ET", venue:"Hard Rock Stadium, Miami", a:{l:"sf-1"}, b:{l:"sf-2"}},
   {id:"final", round:"Final", date:"Sun Jul 19", time:"3:00 PM ET", venue:"MetLife Stadium, East Rutherford", a:{w:"sf-1"}, b:{w:"sf-2"}}
 ];
-const LAST_UPDATED = "Updated Jul 11, 2026. England 2-1 Norway (AET) to reach the semis. Argentina vs Switzerland tonight.";
+const LAST_UPDATED = "Updated Jul 15, 2026. Spain beat France 2-0 to reach the final. England vs Argentina semifinal set for tonight.";
 
 /* ====== LOGIC ====== */
 const byId = Object.fromEntries(MATCHES.map(m=>[m.id,m]));
